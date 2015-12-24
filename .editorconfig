@@ -1,0 +1,12 @@
+Please try to keep the HTML as close to the template as possible. Remove the comments from the HTML when you are finished.
+The base.css file should be referenced from the assets folder and should not be touched. 
+If you need to change some styles, use the app.css file, but try to keep changes to a minimum. 
+Remember to update the relative paths when using the template.
+
+Follow our code style.
+Use double-quotes in HTML and single-quotes in JS and CSS.
+Use npm packages for your third-party dependencies and manually remove files that aren't required for your app to run.
+Use a constant instead of the keyCode directly: var ENTER_KEY = 13;
+Apps should be written without any preprocessors (Sass/CoffeeScript/..) to reach the largest audience.
+To make it easy to compare frameworks, the app should look and behave exactly like the template and the other examples.
+We require apps to work in every browser we support.
