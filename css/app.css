@@ -1,15 +1,4 @@
-*{
-	background: #DDDDDD;
-	text-align: center;
-
-}
-h1{
-	font-size: 100px;
-	margin-bottom: 10px;
-	color: #6DDDDD;
-	font-family: Georgia;
-}
-.new-todo{
-	font-size: 50px;
-	border-color: #DDDDDD;
+#main,
+#footer {
+	display: none;
 }
