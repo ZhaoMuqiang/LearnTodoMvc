@@ -16,7 +16,10 @@
   },
   "homepage": "https://github.com/ZhaoMuqiang/LearnTodoMvc",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "backbone": "^1.2.3",
+    "backbone.localstorage": "^1.1.16",
+    "jquery": "^2.1.4",
+    "todomvc-common": "^1.0.2"
   },
   "devDependencies": {}
 }
