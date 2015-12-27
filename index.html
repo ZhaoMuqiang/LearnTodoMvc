@@ -23,31 +23,33 @@
 		<p>Written by <a href="https://github.com/ZhaoMuqiang">ZhaoMuqiang</a></p>
 		<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 	</footer>
-<script type="text/template" id="item-template">
-			<div class="view">
-				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
-				<label><%- title %></label>
-				<button class="destroy"></button>
-			</div>
-			<input class="edit" value="<%- title %>">
-</script>
-<script type="text/template" id="stats-template">
-	<span class="todo-count"><strong><%= remaining %></strong> <%= remaining === 1 ? 'item' : 'items' %> left</span>
-	<ul class="filters">
+	<script id="todo-template" type="text/x-handlebars-template">
+			{{#this}}
+			<li {{#if completed}}class="completed"{{/if}} data-id="{{id}}">
+				<div class="view">
+					<input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+					<label>{{title}}</label>
+					<button class="destroy"></button>
+				</div>
+				<input class="edit" value="{{title}}">
+			</li>
+		{{/this}}
+		</script>
+		<script id="footer-template" type="text/x-handlebars-template">
+			<span id="todo-count"><strong>{{activeTodoCount}}</strong> {{activeTodoWord}} left</span>
+			<ul id="filters">
 				<li>
-					<a class="selected" href="#/">All</a>
+					<a {{#eq filter 'all'}}class="selected"{{/eq}} href="#/all">All</a>
 				</li>
 				<li>
-					<a href="#/active">Active</a>
+					<a {{#eq filter 'active'}}class="selected"{{/eq}}href="#/active">Active</a>
 				</li>
 				<li>
-					<a href="#/completed">Completed</a>
+					<a {{#eq filter 'completed'}}class="selected"{{/eq}}href="#/completed">Completed</a>
 				</li>
 			</ul>
-			<% if (completed) { %>
-			<button class="clear-completed">Clear completed</button>
-			<% } %>
-</script>
+			{{#if completedTodos}}<button id="clear-completed">Clear completed</button>{{/if}}
+		</script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/backbone/backbone.js"></script>

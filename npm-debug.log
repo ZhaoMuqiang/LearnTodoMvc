@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'handlerbars',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.34
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json LearnTodoMvc@1.0.0 No description
+6 warn package.json LearnTodoMvc@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'handlerbars', null ]
+9 verbose cache add name=undefined spec="handlerbars" args=["handlerbars",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'handlerbars',
+10 verbose parsed url   path: 'handlerbars',
+10 verbose parsed url   href: 'handlerbars' }
+11 silly lockFile b0e76392-handlerbars handlerbars
+12 verbose lock handlerbars D:\NodeJS\node_cache\b0e76392-handlerbars.lock
+13 silly lockFile b0e76392-handlerbars handlerbars
+14 silly lockFile b0e76392-handlerbars handlerbars
+15 verbose addNamed [ 'handlerbars', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile b94deba2-handlerbars handlerbars@
+18 verbose lock handlerbars@ D:\NodeJS\node_cache\b94deba2-handlerbars.lock
+19 silly addNameRange { name: 'handlerbars', range: '*', hasData: false }
+20 verbose request where is /handlerbars
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 44e906a8292f7608
+23 verbose url raw /handlerbars
+24 verbose url resolving [ 'https://registry.npmjs.org/', './handlerbars' ]
+25 verbose url resolved https://registry.npmjs.org/handlerbars
+26 verbose request where is https://registry.npmjs.org/handlerbars
+27 info trying registry request attempt 1 at 16:30:31
+28 http GET https://registry.npmjs.org/handlerbars
+29 http 404 https://registry.npmjs.org/handlerbars
+30 silly registry.get cb [ 404,
+30 silly registry.get   { 'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '2',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     date: 'Sun, 27 Dec 2015 08:30:31 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-nrt6125-NRT',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1451205031.691230,VS0,VE121' } ]
+31 silly lockFile b94deba2-handlerbars handlerbars@
+32 silly lockFile b94deba2-handlerbars handlerbars@
+33 error 404 Not Found
+33 error 404
+33 error 404 'handlerbars' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'LearnTodoMvc'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Windows_NT 6.2.9200
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "handlerbars" "--save"
+36 error cwd E:\githubworkspace\LearnTodoMvc
+37 error node -v v0.10.34
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]
