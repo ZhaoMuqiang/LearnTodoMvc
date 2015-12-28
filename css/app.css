@@ -1,4 +1,7 @@
-#main,
-#footer {
+*{
+	text-align: center;
+	font-size: 40;
+}
+.main{
 	display: none;
 }
