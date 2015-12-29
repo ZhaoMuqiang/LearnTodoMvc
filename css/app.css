@@ -5,3 +5,7 @@
 .main{
 	display: none;
 }
+li{
+	text-align: center;
+	height: 50px;
+}
