@@ -127,10 +127,13 @@ window.onload = function(){
 			var deleteX = document.createElement('label');
 			deleteX.style.color = 'red';
 			deleteX.innerHTML = '               XXXXXX';
-			deleteX.onclick = function(){
+			deleteX.onmousedown = function(){
 				alert('删除该项目');
 				ul.removeChild(li);
 				count.innerHTML = ul.childNodes.length + ' items';
+				if(ul.childNodes.length == 0){
+					markall.style.display = 'none';
+	        	}
 			}
 			li.appendChild(deleteX);
 		}
