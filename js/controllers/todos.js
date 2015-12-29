@@ -17,7 +17,6 @@ window.onload = function(){
 		var checkbox_all = todo_list.childNodes;
 		for(var i = 0; i < checkbox_all.length; i++){
 			if((checkbox_all[i].childNodes)[0].checked == true){
-				alert(i);
 				todo_list.removeChild(checkbox_all[i]);
 				clearcompleted.style.display = 'none';
 				count.innerHTML = todo_list.childNodes.length + ' items';
