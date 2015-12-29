@@ -9,14 +9,19 @@ window.onload = function(){
 	var toggle_all = document.getElementById('toggle-all');
 	toggle_all.onchange = function(){
 		if(toggle_all.checked == true){
-			var checkbox_all = document.getElementById('newCheckbox');
-			alert(checkbox_all[0]);
-			for(nowcheckbox in checkbox_all){
-				if(nowcheckbox.checked == false){
-					nowcheckbox.checked = true;
+			var checkbox_all = document.getElementById('todo-list').childNodes;
+			for(var i = 0; i < checkbox_all.length; i++){
+				if((checkbox_all[i].childNodes)[0].checked == false){
+					(checkbox_all[i].childNodes)[0].checked = true;
+					checkbox_all[i].style.color = 'red';
 				}
-				else{
-					nowcheckbox.checked = false;
+			}
+		}else{
+			var checkbox_all = document.getElementById('todo-list').childNodes;
+			for(var i = 0; i < checkbox_all.length; i++){
+				if((checkbox_all[i].childNodes)[0].checked == true){
+					(checkbox_all[i].childNodes)[0].checked = false;
+					checkbox_all[i].style.color = 'black';
 				}
 			}
 		}
