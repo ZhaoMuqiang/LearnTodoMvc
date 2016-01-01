@@ -17,6 +17,7 @@ window.onload = function(){
 		storage.setItem('todo','');
 	}
 	function onStart(){
+		if(storage.getItem('todo') != null)
 		if(storage.getItem('todo') != ''){
 			todos = storage.getItem('todo').split(',');
 			for(var i = 0 ;i<todos.length;i++){
