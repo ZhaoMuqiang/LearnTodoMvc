@@ -1,5 +1,5 @@
 {
-  "name": "LearnTodoMvc",
+  "name": "learntodoMvc",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,20 +9,18 @@
     "type": "git",
     "url": "https://github.com/ZhaoMuqiang/LearnTodoMvc.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Zhaomuqiang",
+  "license": "no",
   "bugs": {
     "url": "https://github.com/ZhaoMuqiang/LearnTodoMvc/issues"
   },
   "homepage": "https://github.com/ZhaoMuqiang/LearnTodoMvc",
   "dependencies": {
-    "backbone": "^1.2.3",
-    "backbone.localstorage": "^1.1.16",
-    "director": "^1.2.8",
-    "handlebars": "^4.0.5",
-    "jquery": "^2.1.4",
-    "todomvc-app-css": "^2.0.3",
-    "todomvc-common": "^1.0.2"
+    "todomvc-app-css": "^2.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "This is first test project construct by ZhaoMuqiang.",
+  "keywords": [
+    "todomvc"
+  ]
 }

@@ -37,7 +37,7 @@ window.onload = function(){
 					if(i != 0)
 				    	storage.setItem('todo',storage.getItem('todo').substring(0,lengthofall-1)+storage.getItem('todo').substring(lengthofall+todos[i].length,storage.getItem('todo').length));
 					else{
-						storage.setItem('todo',storage.getItem('todo').substring(0,lengthofall)+storage.getItem('todo').substring(lengthofall+todos[i].length,storage.getItem('todo').length));
+						storage.setItem('todo',storage.getItem('todo').substring(0,lengthofall)+storage.getItem('todo').substring(lengthofall+todos[i].length+1,storage.getItem('todo').length));
 					}
 					break;
 				}
@@ -213,6 +213,7 @@ window.onload = function(){
 		}
 		if(e.which == ENTER_KEY){
 			addtodo();
+			todo_input.value='';
 		}
 	}
 
