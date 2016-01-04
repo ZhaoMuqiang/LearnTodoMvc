@@ -1,6 +1,69 @@
 *{
+    text-align: center;
+    font-size: 40;
+}
+input#newCheckbox {
+    text-align: left;
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    margin: 20px 90px;
+    border-radius: 100%;
+    position: relative;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.main{
+	display: none;
+}
+li{
 	text-align: center;
-	font-size: 40;
+	height: 50px;
+    list-style:none;
+}
+h1 {
+    font-size: 100;
+    color: rgba(255, 57, 0, 0.69);
+    margin-bottom: inherit;
+}
+
+input#toggle-all{
+  position:absolute;
+  left:-255px;
+  top:-60px;
+width: 40px;   height: 40px;   background: #ddd;   margin: 20px 90px;      border-radius: 100%;   position: relative;   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);   box-shadow: 0px 1px 3px rgba(0,0,0,0.5);}
+
+input#new-todo {
+    border-bottom-color: #FF7800;
+    border-left-color: brown;
+    border-right-color: brown;
+}
+ul#todo-list{
+    margin-top: -60px;
+
+}
+#lastcount{
+    position: relative;
+}
+#lastcount label{
+    margin-left: -30px;
+    font-size: 20;
+}
+#clearcompleted{
+   font-size: 20;
+   color:rgb(82, 83, 89);
+   margin-left: 30px !important;
+}
+#lastcount #all,#active,#completed{
+    width:20px;   height: 20px;   background: #ddd;   margin: 10px 20px;      border-radius: 100%;   position: relative;   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);   box-shadow: 0px 1px 3px rgba(0,0,0,0.5);}
+}
+
+h1 {
+    font-size: 100;
+    color: rgba(255, 57, 0, 0.69);
+    margin-bottom: inherit;
 }
 .main{
 	display: none;
@@ -8,4 +71,13 @@
 li{
 	text-align: center;
 	height: 50px;
+}
+label#markall {
+    display: none;
+}
+#info{
+    color:rgb(82, 83, 89);
+}
+a {
+  color: rgb(94, 78, 78);
 }
