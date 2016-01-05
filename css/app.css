@@ -31,7 +31,7 @@ h1 {
 
 input#toggle-all{
   position:absolute;
-  left:-255px;
+  left:-280px;
   top:-60px;
 width: 40px;   height: 40px;   background: #ddd;   margin: 20px 90px;      border-radius: 100%;   position: relative;   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);   box-shadow: 0px 1px 3px rgba(0,0,0,0.5);}
 
