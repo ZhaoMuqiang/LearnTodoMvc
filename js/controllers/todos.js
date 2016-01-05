@@ -30,6 +30,7 @@ window.onload = function(){
 	//持久化删除
 	function deletetodoofStorage(title){
 		var lengthofall = 0;
+		if(storage.getItem('todo') != null)
 		if(storage.getItem('todo') != ''){
 			todos = storage.getItem('todo').split(',,');
 			for(var i = 0 ;i<todos.length;i++){
@@ -50,6 +51,7 @@ window.onload = function(){
 	//持久化修改
 		function updatetodoofStorage(title,check){
 		var lengthofall = 0;
+		if(storage.getItem('todo') != null)
 		if(storage.getItem('todo') != ''){
 			todos = storage.getItem('todo').split(',,');
 			for(var i = 0 ;i<todos.length;i++){
@@ -65,6 +67,7 @@ window.onload = function(){
 	}
 	//检验是否有重复的
 	function checkrepeat(title){
+		if(storage.getItem('todo') != null)
 		if(storage.getItem('todo') != ''){
 			todos = storage.getItem('todo').split(',,');
 			for(var i = 0 ;i<todos.length;i++){
@@ -80,6 +83,7 @@ window.onload = function(){
 	//持久化修改todo
 	function updatetodocontentofstorage(title,newtitle){
 		var lengthofall = 0;
+		if(storage.getItem('todo') != null)
 		if(storage.getItem('todo') != ''){
 			todos = storage.getItem('todo').split(',,');
 			for(var i = 0 ;i<todos.length;i++){
@@ -284,8 +288,6 @@ window.onload = function(){
 	todo_input.onkeypress = function(e){
 		var addtodo = function(){
 			var todo_title = todo_input.value.trim();
-			//todo.settitle(todo_title);
-			//todo.setcomplete(false);
 			if(checkrepeat(todo_title)){
 				alert('您已经添加过该todo，请换一个名称!');
 			}else{
