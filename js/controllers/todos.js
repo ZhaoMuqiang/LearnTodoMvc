@@ -291,7 +291,8 @@ window.onload = function(){
 			if(checkrepeat(todo_title)){
 				alert('您已经添加过该todo，请换一个名称!');
 			}else{
-				if(storage.getItem('todo')!='')
+				if(storage.getItem('todo') != null)
+				if(storage.getItem('todo') != '')
 					storage.setItem('todo',storage.getItem('todo')+',,'+todo_title+','+'0');
 				else{
 					storage.setItem('todo',todo_title+','+'0');
